@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="style.css" rel="stylesheet" />
+  <style>
+    .dark-mode {
+      background-color: gray;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="main">
+    <div id="1" class="row">
+      <div class="col">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>FIRSTNAME</th>
+              <th>LASTNAME</th>
+              <th>PHONE</th>
+              <th>STREET</th>
+              <th>ZIP</th>
+              <th>CITY</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody id="tb">
+
+          </tbody>
+        </table>
+        <br>
+        <button id="reload">Reload page</button>
+      </div>
+      <div class="col">
+        <form>
+          <p>Person to add</p>
+
+          <input id="fName" type="text" value="first name">
+          <input id="lName" type="text" value="last name">
+          <input id="phone" type="text" value="phone">
+          <br>
+          <br>
+          <p>Address:</p>
+          <input id="street" type="text" value="street">
+          <input id="zip" type="number" value="9999">
+          <input id="city" type="text" value="city">
+          <br>
+          <br>
+          
+          <button id="addP">Add person</button>
+          <input id="editID" type="text" value="To edit, enter ID">
+          <button id="editBTN">Edit person</button>
+        </form>
+        <br>
+        <input id="delID" type="text" value="id">
+        <button id="delBTN">Delete person</button>
+        <br>
+        <br>
+        <button id="dark">Darkmode</button>
+      </div>
+    </div>
+    <br>
+
+    <!-- <div id="4">
+        Solution exercise 4 here
+      </div> -->
+  </div>
+  <script src="bundle.js"></script>
+</body>
+
+</html>
